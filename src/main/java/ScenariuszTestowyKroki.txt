@@ -1,0 +1,22 @@
+Scenariusz testu:
+
+1. Otworzyć stronę : https://www.e-point.pl/
+    ● Oczekiwany rezultat : Otworzyła się strona z <title> “Strona główna | e-point SA”
+2. Kliknąć w ikonkę lupy w topie strony
+    ● Oczekiwany rezultat : pojawił się pop-up
+3. Wpisać tekst “test” i kliknąć ENTER
+    ● Oczekiwany rezultat : url strony będzie zawierał /wyniki-wyszukiwania?q=test
+    ● Oczekiwany rezultat : W input o klasie css gsc-input będzie tekst “test”
+    ● Oczekiwany rezultat : Na stronie są wiersze/rekordy wyników wyszukiwania
+4. Przejście do drugiej strony paginacji poprzez kliknięcie w przycisk paginacji
+    ● Oczekiwany rezultat : W input o klasie css gsc-input będzie tekst “test”
+    ● Oczekiwany rezultat : Na stronie są wiersze/rekordy wyników
+    ● Oczekiwany rezultat : Na drugiej stronie wyniki/rekordy są inne wyniki niż na pierwszej
+5. Kliknąć w ikonkę “x” (wyczyść wyniki)
+    ● Oczekiwany rezultat : Input o klasie css gsc-input będzie pusty (nie będzie w nim tekstu)
+    ● Oczekiwany rezultat : Na stronie nie będzie wiersze/rekordy wyników wyszukiwania
+
+Uwagi:
+● dodaj do testu dane “test” (tekst do wyszukiwania) za pomocą @DataProvider
+● scenariusz testowy ma być wykonany w jednej metodzie testowej (nie rozbijaj kroków na osobne testy)
+● asercje powinny być czytelne, tak jakbyśmy czytali log/raport z testów
